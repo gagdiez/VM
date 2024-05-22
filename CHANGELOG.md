@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.7.0
+- FEAT: Made optional to logout the wallet selector when connecting to a contract different from `config.contractName`
+
+  - To enable this feature, pass the allowOtherContracts flag to the config parameter of initNear: `initNear({networkId, selector, config: { allowOtherContracts: true }} )`
+  
+  - This feature is disabled by default to keep retrocompatibility
+
 ## 2.6.0
 
 - Support multiple Limited Access Keys on BOS gateway to enable "Don't ask me again" when interacting with third-party contracts on BOS. See https://github.com/NearSocial/VM/issues/148
